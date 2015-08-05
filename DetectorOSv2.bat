@@ -1,7 +1,7 @@
 @echo OFF
 title DetecOS
 mode 50, 10
-color 5F
+color F0
 setlocal enabledelayedexpansion
 set $VERSIONWINDOWS=0
 cls
