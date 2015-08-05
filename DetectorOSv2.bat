@@ -17,9 +17,10 @@ EXIT
 :: end main
 
 :DetecOS (
-    for %%a in (6.3. 6.2. 6.1. 6.0. 5.1. 5.2. 2000 NT ME 98 95) do (
+    for %%a in (10.0. 6.3. 6.2. 6.1. 6.0. 5.1. 5.2. 2000 NT ME 98 95) do (
         ver | find /i "version %%a" > nul
         if !ERRORLEVEL!==0 (
+            if %%a==10.0. set $VERSIONWINDOWS=Windows 10
             if %%a==6.3. set $VERSIONWINDOWS=Windows 8.1
             if %%a==6.2. set $VERSIONWINDOWS=Windows 8
             if %%a==6.1. set $VERSIONWINDOWS=Windows 7
