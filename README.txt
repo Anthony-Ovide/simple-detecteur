@@ -1,0 +1,1 @@
+Script Batch détecte la version du noyau "NT" et affiche la version de windows.
